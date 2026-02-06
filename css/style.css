@@ -1,0 +1,94 @@
+/* ===================================================
+   1. VARIABLES GLOBALES
+   =================================================== */
+
+:root {
+  --color-principal: #1e90ff;
+  --color-secundario: #f4f4f4;
+  --color-texto: #333;
+}
+
+/* ===================================================
+   2. ESTILOS BASE
+   =================================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--color-secundario);
+  color: var(--color-texto);
+}
+
+/* ===================================================
+   3. LAYOUT COMÚN
+   =================================================== */
+
+header, footer {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ===================================================
+   4. COMPONENTES REUTILIZABLES
+   =================================================== */
+
+.grid-productos {
+  display: block;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.grid-productos1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.producto {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  height: 550px;
+}
+
+.precio {
+  font-weight: bold;
+  color: var(--color-principal);
+}
+
+/* ===================================================
+   5. EXTENSIONES DE LOS MIEMBROS
+   (NO BORRAR NADA DE ARRIBA)
+   =================================================== */
+a{
+  color: white;
+}
+
+.imgProducto{
+  width: 300px;
+  margin-left: 20px;
+}
+
+.descProducto{
+  width: 1000px;
+  margin: auto;
+  position: relative;
+  bottom: 500px;
+}
+.descProducto h3{
+  font-size: 50px;
+}
+
+.descProducto p{
+  font-size: x-large;
+  margin-left: 10px;
+}
+
+.descProducto .precio{
+  font-size: 40px;
+}
+
+#section1 {
+  margin-left: 50px;
+}
